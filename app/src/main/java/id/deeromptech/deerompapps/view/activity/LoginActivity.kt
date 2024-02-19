@@ -8,19 +8,20 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import id.deeromptech.deerompapps.MainActivity
 import id.deeromptech.deerompapps.databinding.ActivityLoginBinding
 import id.deeromptech.deerompapps.model.User
+import id.deeromptech.deerompapps.model.dataDummy
+import id.deeromptech.deerompapps.utils.ViewBindingExt.viewBinding
 
 class LoginActivity : AppCompatActivity() {
 
+    private val binding by viewBinding(ActivityLoginBinding::inflate)
     private var loginAttempts = 0
     private lateinit var user : User
-
-    private val binding: ActivityLoginBinding by lazy {
-        ActivityLoginBinding.inflate(layoutInflater)
-    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         supportActionBar?.hide()
+
+        user = dataDummy.firstOrNull() ?: User()
 
         binding.buttonLogin.setOnClickListener {
             val username = binding.usernameEditText.text.toString()
@@ -30,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
                 openMainMenu()
             } else {
                 loginAttempts++
-                if (loginAttempts >= 3) {
+                if (loginAttempts > 3) {
                     showResetPasswordDialog()
                 } else {
                     showWrongCredentialsDialog()
