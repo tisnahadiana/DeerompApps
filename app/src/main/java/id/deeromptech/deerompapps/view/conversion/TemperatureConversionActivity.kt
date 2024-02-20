@@ -3,9 +3,9 @@ package id.deeromptech.deerompapps.view.conversion
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatAutoCompleteTextView
 import androidx.core.widget.addTextChangedListener
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import id.deeromptech.deerompapps.databinding.ActivityTemperatureConversionBinding
 import id.deeromptech.deerompapps.utils.ViewBindingExt.viewBinding
 import java.text.DecimalFormat
@@ -13,13 +13,21 @@ import java.text.DecimalFormat
 class TemperatureConversionActivity : AppCompatActivity() {
 
     private val binding by viewBinding(ActivityTemperatureConversionBinding::inflate)
-    private val temperatureTypes = arrayOf("Celsius ke Fahrenheit", "Fahrenheit ke Celsius", "Celsius ke Kelvin", "Kelvin ke Celsius", "Fahrenheit ke Kelvin", "Kelvin ke Fahrenheit")
+    private val temperatureTypes = arrayOf(
+        "Celsius ke Fahrenheit",
+        "Fahrenheit ke Celsius",
+        "Celsius ke Kelvin",
+        "Kelvin ke Celsius",
+        "Fahrenheit ke Kelvin",
+        "Kelvin ke Fahrenheit"
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, temperatureTypes)
+        val adapter =
+            ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, temperatureTypes)
         (binding.inputTypeConversion as? AppCompatAutoCompleteTextView)?.setAdapter(adapter)
 
         binding.inputSuhu.addTextChangedListener {
@@ -61,14 +69,7 @@ class TemperatureConversionActivity : AppCompatActivity() {
 
     private fun showTemperatureTypeDialog() {
         if (binding.inputTypeConversion.text.isEmpty()) {
-            val builder = MaterialAlertDialogBuilder(this)
-            builder.setTitle("Pilih Tipe Konversi Suhu")
-            builder.setItems(temperatureTypes) { _, which ->
-                binding.inputTypeConversion.setText(temperatureTypes[which])
-                convertTemperature()
-            }
-            builder.setCancelable(true)
-            builder.show()
+            Toast.makeText(this, "Pilih Tipe Konversi Suhu", Toast.LENGTH_SHORT).show()
         } else {
             convertTemperature()
         }
