@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import id.deeromptech.deerompapps.MainActivity
 import id.deeromptech.deerompapps.databinding.ActivityLoginBinding
 import id.deeromptech.deerompapps.model.User
 import id.deeromptech.deerompapps.model.dataDummy
 import id.deeromptech.deerompapps.utils.ViewBindingExt.viewBinding
+import id.deeromptech.deerompapps.view.home.DashboardActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -39,10 +39,14 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
+        binding.forgotPass.setOnClickListener {
+            showResetPasswordDialog()
+        }
+
     }
 
     private fun openMainMenu() {
-        startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+        startActivity(Intent(this@LoginActivity, DashboardActivity::class.java))
         finish()
     }
 
