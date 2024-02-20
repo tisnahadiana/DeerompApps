@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import id.deeromptech.deerompapps.databinding.ActivityDashboardBinding
 import id.deeromptech.deerompapps.utils.ViewBindingExt.viewBinding
-import id.deeromptech.deerompapps.view.conversion.ConversionActivity
+import id.deeromptech.deerompapps.view.conversion.TemperatureConversionActivity
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -15,7 +15,7 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.menuSuhu.setOnClickListener {
-            startActivity(Intent(this@DashboardActivity, ConversionActivity::class.java))
+            startActivity(Intent(this@DashboardActivity, TemperatureConversionActivity::class.java))
         }
 
     }
