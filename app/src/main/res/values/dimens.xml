@@ -13,6 +13,7 @@
     <dimen name="shadow_line_toolbar">4dp</dimen>
     <dimen name="main_margin_view">20dp</dimen>
     <dimen name="main_margin_view_10">10dp</dimen>
+    <dimen name="main_margin_view_8">8dp</dimen>
     <dimen name="main_margin_view2">28dp</dimen>
     <dimen name="height_button_add">70dp</dimen>
     <dimen name="secondary_margin">16dp</dimen>

@@ -1,4 +1,4 @@
-package id.deeromptech.deerompapps.view.activity
+package id.deeromptech.deerompapps
 
 import android.content.Context
 import android.content.DialogInterface
@@ -9,7 +9,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AlertDialog
-import id.deeromptech.deerompapps.R
 
 class SplashActivity : AppCompatActivity() {
 

@@ -16,25 +16,31 @@
         android:theme="@style/Theme.DeerompApps"
         tools:targetApi="31">
         <activity
-            android:name=".view.conversion.DistanceConversionActivity"
+            android:name=".newsapp.view.dashboard.DashboardNewsActivity"
             android:exported="false" />
         <activity
-            android:name=".view.conversion.MasaConversionActivity"
+            android:name=".ChooseAppActivity"
             android:exported="false" />
         <activity
-            android:name=".view.conversion.TimeConversionActivity"
+            android:name=".conversionapp.view.conversion.DistanceConversionActivity"
             android:exported="false" />
         <activity
-            android:name=".view.conversion.TemperatureConversionActivity"
+            android:name=".conversionapp.view.conversion.MasaConversionActivity"
             android:exported="false" />
         <activity
-            android:name=".view.home.DashboardActivity"
+            android:name=".conversionapp.view.conversion.TimeConversionActivity"
             android:exported="false" />
         <activity
-            android:name=".view.activity.LoginActivity"
+            android:name=".conversionapp.view.conversion.TemperatureConversionActivity"
             android:exported="false" />
         <activity
-            android:name=".view.activity.SplashActivity"
+            android:name=".conversionapp.view.dashboard.DashboardConversionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
