@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AlertDialog
+import id.deeromptech.deerompapps.newsapp.view.dashboard.DashboardNewsActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -26,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun initialCheck() {
         if (isInternetAvailable()) {
-            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
+            startActivity(Intent(this@SplashActivity, ChooseAppActivity::class.java))
         } else {
             showBadConnectionDialog()
         }

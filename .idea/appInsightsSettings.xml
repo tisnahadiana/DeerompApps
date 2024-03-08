@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="id.deeromptech.deerompapps" />
+                  <option name="mobileSdkAppId" value="1:292138251749:android:7e8c8fb94489e9dd5aab0c" />
+                  <option name="projectId" value="nu-circle-2f8dd" />
+                  <option name="projectNumber" value="292138251749" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -17,12 +17,10 @@ class ChooseAppActivity : AppCompatActivity() {
 
         binding.cvConversionTemp.setOnClickListener {
             startActivity(Intent(this@ChooseAppActivity, DashboardConversionActivity::class.java))
-            finish()
         }
 
         binding.cvNewsApp.setOnClickListener {
             startActivity(Intent(this@ChooseAppActivity, DashboardNewsActivity::class.java))
-            finish()
         }
     }
 }
