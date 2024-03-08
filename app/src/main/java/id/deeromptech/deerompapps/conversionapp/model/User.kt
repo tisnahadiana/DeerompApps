@@ -1,4 +1,4 @@
-package id.deeromptech.deerompapps.model
+package id.deeromptech.deerompapps.conversionapp.model
 
 data class User(
     var username : String? = null,

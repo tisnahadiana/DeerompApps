@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,25 +18,34 @@
         android:theme="@style/Theme.DeerompApps"
         tools:targetApi="31">
         <activity
-            android:name=".view.conversion.DistanceConversionActivity"
+            android:name=".newsapp.view.detail.DetailNewsActivity"
             android:exported="false" />
         <activity
-            android:name=".view.conversion.MasaConversionActivity"
+            android:name=".newsapp.view.dashboard.DashboardNewsActivity"
             android:exported="false" />
         <activity
-            android:name=".view.conversion.TimeConversionActivity"
+            android:name=".ChooseAppActivity"
             android:exported="false" />
         <activity
-            android:name=".view.conversion.TemperatureConversionActivity"
+            android:name=".conversionapp.view.conversion.DistanceConversionActivity"
             android:exported="false" />
         <activity
-            android:name=".view.home.DashboardActivity"
+            android:name=".conversionapp.view.conversion.MasaConversionActivity"
             android:exported="false" />
         <activity
-            android:name=".view.activity.LoginActivity"
+            android:name=".conversionapp.view.conversion.TimeConversionActivity"
             android:exported="false" />
         <activity
-            android:name=".view.activity.SplashActivity"
+            android:name=".conversionapp.view.conversion.TemperatureConversionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".conversionapp.view.dashboard.DashboardConversionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,6 +53,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
 </manifest>

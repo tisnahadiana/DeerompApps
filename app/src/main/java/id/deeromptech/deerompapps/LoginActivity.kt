@@ -1,4 +1,4 @@
-package id.deeromptech.deerompapps.view.activity
+package id.deeromptech.deerompapps
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import id.deeromptech.deerompapps.databinding.ActivityLoginBinding
-import id.deeromptech.deerompapps.model.User
-import id.deeromptech.deerompapps.model.dataDummy
+import id.deeromptech.deerompapps.conversionapp.model.User
+import id.deeromptech.deerompapps.conversionapp.model.dataDummy
 import id.deeromptech.deerompapps.utils.ViewBindingExt.viewBinding
-import id.deeromptech.deerompapps.view.home.DashboardActivity
+import id.deeromptech.deerompapps.conversionapp.view.dashboard.DashboardConversionActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -46,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun openMainMenu() {
-        startActivity(Intent(this@LoginActivity, DashboardActivity::class.java))
+        startActivity(Intent(this@LoginActivity, ChooseAppActivity::class.java))
         finish()
     }
 
