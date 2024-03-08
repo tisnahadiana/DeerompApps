@@ -16,3 +16,8 @@ Created : Tuesday, February 20, 2024
   
 ![2](https://github.com/tisnahadiana/DeerompApps/assets/77492139/1b8c2910-5119-4775-b1a3-576c695caf55)
 
+
+Created : Friday, March 08, 2024
+- Create a ChooseApp, Dashboard News, Detail News and Share news page
+
+![3](https://github.com/tisnahadiana/DeerompApps/assets/77492139/1bd744b5-2b65-45c3-b27c-fe93058ebf7c)
