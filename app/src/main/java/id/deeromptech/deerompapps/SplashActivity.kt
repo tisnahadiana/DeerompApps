@@ -27,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun initialCheck() {
         if (isInternetAvailable()) {
-            startActivity(Intent(this@SplashActivity, ChooseAppActivity::class.java))
+            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
         } else {
             showBadConnectionDialog()
         }
