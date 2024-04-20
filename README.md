@@ -21,3 +21,13 @@ Created : Friday, March 08, 2024
 - Create a ChooseApp, Dashboard News, Detail News and Share news page
 
 ![3](https://github.com/tisnahadiana/DeerompApps/assets/77492139/1bd744b5-2b65-45c3-b27c-fe93058ebf7c)
+
+Created : Sunday, April 07, 2024
+- Create Redesign for Taxsee Apps Using Figma
+- Access Figma Design Here : https://bit.ly/3UnU0ne
+- Dashboard, Order and Order detail page
+![1](https://github.com/tisnahadiana/DeerompApps/assets/77492139/98bcae4a-2b52-4f35-a7a8-012d337f4204)
+
+- Notification and Profile Page
+![2](https://github.com/tisnahadiana/DeerompApps/assets/77492139/6a36f1fb-dda6-40cf-b632-c4a218255a07)
+
