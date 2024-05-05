@@ -32,7 +32,7 @@ Created : Sunday, April 07, 2024
 ![2](https://github.com/tisnahadiana/DeerompApps/assets/77492139/6a36f1fb-dda6-40cf-b632-c4a218255a07)
 
 
-Created : Saturday, Mei 05, 2024
+Created : Saturday, Mei 04, 2024
 - Create Redesign for website dicoding to UI Android Using Figma
 - Access Figma Design Here : https://bit.ly/3JLjAwc
 - Dashboard, Academy, Academy Coridor, and Academy Detail page
@@ -40,3 +40,11 @@ Created : Saturday, Mei 05, 2024
 
 - List Module, Event and Profile Page
 ![2](https://github.com/tisnahadiana/DeerompApps/assets/77492139/e6f277cb-020b-49ce-b23c-f4fabbdce15c)
+
+
+Created : Sunday, Mei 05, 2024
+- Create UI Android for Caviar Apps Using Figma
+- Access Figma Design Here : https://bit.ly/44syOQg
+- Splash, Login, Home, Home Navigation and Detection page
+![Mobile 2 UI Aplikasi Android CAVIAR](https://github.com/tisnahadiana/DeerompApps/assets/77492139/071d0bea-9363-4888-9844-817d9d90ee4a)
+
